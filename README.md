@@ -1,35 +1,19 @@
-# The Odin Project Ruby Exercises
+# The Odin Project Ruby Exercises and Projects
 
 ## About this repository
 
-This repository is a complement to the Ruby course for The Odin Project. It contains a series of Ruby exercises alongside pre-written tests that will help guide the student towards a solution, providing a Test Driven Development experience.
+This repository is a complement to the
+[Ruby course for The Odin Project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby).
+It contains a series of Ruby exercises that must comply pre-written tests.
 
-Each set of exercises should only be done **after** being directed to do so in the assignment of the corresponding Ruby lesson. I.e. if you just finished the Basic Data Types lesson you should **only** do the exercises in the `1_data_types` folder for now.
+I (Damian Demasi) have completed the exercises and projects on my own and have
+pushed them to this repository.
 
-## Cloning and installation
+## Repository structure
 
-Clone this repository to your local machine. To do this, click on the green "Code" button at the top right of list of files and copy the link in the prompt. Then, run the following command in your terminal:
-
-    git clone <link>
-
-This will create a folder called 'ruby-exercises' inside the directory you ran the command in.
-
-CD into that folder:
-
-    cd ruby-exercises
-
-Now before beginning work on the exercises, you'll want to install a gem called RSpec. RSpec is a popular Ruby testing framework that is used in this repository to provide you with tests that check your solutions.
-
-To install RSpec, run the following command in your terminal:
-
-    gem install rspec
-
-You should see a message saying "5 gems installed" in your terminal. Verify that the installation was successful by simply running the following command:
-
-    rspec
-
-Which should print a few lines about not finding any examples. This is ok and means it's working!
-
-## Usage
-
-Each directory contains a read me with instructions for the exercises within them.
+-   `ruby_basics` directory: here you can find all the exercises from the Ruby
+    course for The Odin Project solved by me.
+-   `projects` directory: here you can find all the projects from the Ruby
+    course for The Odin Project solved by me.
+    -   `caesar_cipher` directory: here you can find my solution for the Caesar
+        Cipher project.
