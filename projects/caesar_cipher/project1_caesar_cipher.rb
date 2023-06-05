@@ -29,17 +29,3 @@ def caesar_cipher(text, shift_factor = 0)
     end
   end.join
 end
-
-p caesar_cipher('What a String! !@#$%^&*()', 0)
-p caesar_cipher('What a String! !@#$%^&*()', 1)
-p caesar_cipher('What a String! !@#$%^&*()', 5)
-p caesar_cipher('What a String! !@#$%^&*()', 5.5)
-p caesar_cipher('What a String! !@#$%^&*()', '5')
-p caesar_cipher('What a String! !@#$%^&*()', [])
-p caesar_cipher('What a String! !@#$%^&*()', {})
-p caesar_cipher('What a String! !@#$%^&*()', nil)
-p caesar_cipher(nil, 5)
-p caesar_cipher(123)
-p caesar_cipher([])
-p caesar_cipher({})
-p caesar_cipher(:symbol)
