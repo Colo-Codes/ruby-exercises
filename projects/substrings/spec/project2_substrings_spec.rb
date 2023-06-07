@@ -35,7 +35,20 @@ RSpec.describe 'Project: Substrings' do
         dictionary = %w[below down go going horn how howdy it i low own part
                         partner sit]
         return_hash = { 'below' => 1, 'low' => 1 }
+
         expect(substrings(word, dictionary)).to eq(return_hash)
+      end
+
+      context 'when the wor argument is actually a sentence that includes spaces' do
+        it 'returns a hash with substrings matching the word and the amount of repeated matches' do
+          sentence = "Howdy partner, sit down! How's it going?"
+          dictionary = %w[below down go going horn how howdy it i low own part
+                          partner sit]
+          return_hash = { 'down' => 1, 'go' => 1, 'going' => 1, 'how' => 2, 'howdy' => 1, 'it' => 2, 'i' => 3,
+                          'own' => 1, 'part' => 1, 'partner' => 1, 'sit' => 1 }
+
+          expect(substrings(sentence, dictionary)).to eq(return_hash)
+        end
       end
     end
   end

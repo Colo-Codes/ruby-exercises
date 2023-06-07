@@ -8,13 +8,13 @@ def substrings(word = '', dictionary = [])
   return 'Error: invalid arguments provided' if !word.is_a?(String) || !dictionary.is_a?(Array)
   return 'Error: no arguments provided' if word.nil? || dictionary.nil? || word.empty? || dictionary.empty?
 
-  match_hash = {}
+  word_array = word.downcase.split
 
-  dictionary.each do |substring|
-    if word.index(substring)
-      match_hash[substring] = match_hash[substring].nil? ? 1 : match_hash[substring] + 1
-    end
+  dictionary.each_with_object(Hash.new(0)) do |substring, hash|
+    downcased_substring = substring.downcase
+
+    count = word_array.count { |word_element| word_element.include?(downcased_substring) }
+
+    hash[downcased_substring] = count if count.positive?
   end
-
-  match_hash
 end
