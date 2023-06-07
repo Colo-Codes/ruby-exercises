@@ -17,3 +17,5 @@ pushed them to this repository.
     course for The Odin Project solved by me.
     -   `caesar_cipher` directory: here you can find my solution for the Caesar
         Cipher project.
+    -   `substrings` directory: here you can find my solution for the Substrings
+        project.
